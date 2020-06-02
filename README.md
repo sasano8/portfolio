@@ -56,7 +56,18 @@
 
 | Item | Level | Note |
 |---|---|---|
-| Docker | :star::star: | |
 | PyCharm | :star::star::star: | |
 | Visual Studio | :star::star::star: | |
+| Git | :star::star::star: | |
+| SubVersion | :star::star: | |
+
+# Middleware
+
+| Item | Level | Note |
+|---|---|---|
+| ElasticSearch | :star::star::star: | |
+| SQLServer | :star::star::star: | |
+| MySQL | :star::star::star: | |
+| Oracle | :star::star: | |
+| Docker | :star::star: | |
 
