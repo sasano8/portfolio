@@ -5,6 +5,22 @@
 # skill
 
 
-# tools
+# Programming Language
 
-- docker :star:
+| Item | Level |
+|---|---|
+| C# | :star::star::star: |
+| Python | :star::star::star: |
+| JavaScript | :star::star: |
+| TypeScript | :star: |
+| HTML | :star::star: |
+| CSS | :star::star: |
+| SCCS | :star: |
+| PHP | :star: |
+| C | :star::star: |
+| C++ | :star: |
+| VBA | :star::star::star::star: |
+| Bash | :star::star: |
+
+
+
