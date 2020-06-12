@@ -75,6 +75,6 @@
 
 | Item | Level | Note |
 |---|---|---|
-| CircleCI | :star::star::star: | |
+| CircleCI | :star::star: | |
 | TravisCI |  | |
 | Jenkins |  | |
