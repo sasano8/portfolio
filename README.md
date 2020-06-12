@@ -71,3 +71,10 @@
 | Oracle | :star::star: | |
 | Docker | :star::star: | |
 
+# CI/CD
+
+| Item | Level | Note |
+|---|---|---|
+| CircleCI | :star::star::star: | |
+| TravisCI |  | |
+| Jenkins |  | |
