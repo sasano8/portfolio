@@ -10,7 +10,7 @@
 | Item | Level | Note |
 |---|---|---|
 | VBA | :star::star::star::star: | I don't want to use it as my main development language. |
-| Python | :star::star::star: | |
+| Python | :star::star::star: | only ^3.6 |
 | C# | :star::star::star: | |
 | SQL | :star::star::star: | |
 | JavaScript | :star::star: | |
