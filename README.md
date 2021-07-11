@@ -2,39 +2,39 @@
 自分の経歴やスキルについて整理するプロジェクト
 
 
-# skill
+# 技術スタック
 
 
-# Programming Language
+# 習得言語
 
 | Item | Level | Note |
 |---|---|---|
-| VBA | :star::star::star::star: | I don't want to use it as my main development language. |
-| Python | :star::star::star: | only ^3.6 |
+| VBA | :star::star::star::star::star: | VBAは得意ですが、VBA中心の案件はお断りしています |
+| Python | :star::star::star::star: | Pythonを中心とする案件を請けたいと思っています |
 | C# | :star::star::star: | |
 | SQL | :star::star::star: | |
-| JavaScript | :star::star: | |
+| JavaScript | :star::star::star: | |
 | HTML | :star::star: | |
 | CSS | :star::star: | |
 | Bash | :star::star: | |
 | Java | :star::star: | |
-| TypeScript | :star: | |
+| TypeScript | :star::star: | |
 | SCCS | :star: | |
 | PHP | :star: | |
 | C | :star: | |
 | C++ | :star: | |
-
+| lua | :star: | |
 
 # Framework
 
 | Item | Level | Note |
 |---|---|---|
-| Django | :star::star::star: | Django 2.x Restframework Only |
-| Vue.js | :star::star::star: | Nuxt.js Vuetify |
-| FastAPI | :star::star: | |
-| ASP.NET | :star::star: | MVC5 |
-| Xamarin(Android) | :star::star: | |
-
+| Django | :star::star::star: | |
+| FastAPI | :star::star::star: | 業務経験なし |
+| Vue.js | :star::star::star: | Nuxt.js Vuetify 業務経験なし |
+| ASP.NET(MVC5) | :star::star: | |
+| Xamarin(Android) | :star::star: | 業務経験なし |
+| Unity | :star::star: | 業務経験なし |
 
 # Cloud
 
@@ -42,39 +42,22 @@
 |---|---|---|
 | AWS | :star::star::star: | |
 | Azure | :star: | |
-| GCP | | |
-
-# OS
-
-| Item | Level | Note |
-|---|---|---|
-| Windows | :star::star::star::star: | |
-| Linux | :star::star::star: | CentOS |
-| Mac | | |
-
-# Tools
-
-| Item | Level | Note |
-|---|---|---|
-| PyCharm | :star::star::star: | |
-| Visual Studio | :star::star::star: | |
-| Git | :star::star::star: | |
-| SubVersion | :star::star: | |
+| GCP | :star: | |
 
 # Middleware
 
 | Item | Level | Note |
 |---|---|---|
-| ElasticSearch | :star::star::star: | |
+| PostgreSQL | :star::star::star: | |
 | SQLServer | :star::star::star: | |
 | MySQL | :star::star::star: | |
+| Docker | :star::star::star: | |
+| ElasticSearch | :star::star: | |
 | Oracle | :star::star: | |
-| Docker | :star::star: | |
 
 # CI/CD
 
 | Item | Level | Note |
 |---|---|---|
+| GitHub Actions | :star::star: | |
 | CircleCI | :star::star: | |
-| TravisCI |  | |
-| Jenkins |  | |
