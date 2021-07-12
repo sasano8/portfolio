@@ -38,7 +38,7 @@
 |---|---|---|
 | 英語 | :star: | 苦手です。 |
 
-## Framework
+## フレームワーク
 
 | Item | Level | Note |
 |---|---|---|
@@ -57,7 +57,7 @@
 | Azure | :star: | |
 | GCP | :star: | |
 
-## Middleware
+## ミドルウェア
 
 | Item | Level | Note |
 |---|---|---|
