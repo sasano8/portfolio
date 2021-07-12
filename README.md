@@ -8,10 +8,11 @@
 | フロントエンド | :star::star::star: | |
 | インフラ | :star::star::star: | |
 | データ分析 | :star::star: | |
+| 自然言語処理 | :star::star: | |
 | 機械学習 | :star: | |
 | 組み込み | :star: | |
 
-## 習得言語
+## プログラム言語
 
 | Item | Level | Note |
 |---|---|---|
@@ -31,6 +32,12 @@
 | C++ | :star: | |
 | lua | :star: | |
 
+## 自然言語
+
+| Item | Level | Note |
+|---|---|---|
+| 英語 | :star: | 苦手です。 |
+
 ## Framework
 
 | Item | Level | Note |
@@ -42,7 +49,7 @@
 | Xamarin(Android) | :star::star: | 業務経験なし |
 | Unity | :star::star: | 業務経験なし |
 
-## Cloud
+## Paas
 
 | Item | Level | Note |
 |---|---|---|
@@ -57,9 +64,12 @@
 | PostgreSQL | :star::star::star: | |
 | SQLServer | :star::star::star: | |
 | MySQL | :star::star::star: | |
+| Oracle | :star::star: | |
+
+| Item | Level | Note |
+|---|---|---|
 | Docker | :star::star::star: | |
 | ElasticSearch | :star::star: | |
-| Oracle | :star::star: | |
 
 ## CI/CD
 
@@ -163,3 +173,8 @@
 ERPパッケージのカスタマーサポートを通じて、各お客様に導入されているパッケージのバージョンを管理するツールを開発した。
 
 - VBA
+
+# 最終学歴
+
+- 帝京高校大学　中退
+- 江戸川高等学校　卒業
