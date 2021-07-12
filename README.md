@@ -1,5 +1,8 @@
 # 技術スタック
 
+Pythonを中心に仕事をしています。
+2018年8月からフリーランスになりました。
+
 ## レイヤー
 
 | Item | Level | Note |
@@ -17,26 +20,25 @@
 | Item | Level | Note |
 |---|---|---|
 | VBA | :star::star::star::star::star: | VBAは得意ですが、VBA中心の案件はお断りしています |
-| Python | :star::star::star::star: | Pythonを中心とする案件を請けたいと思っています |
+| Python | :star::star::star::star: | |
 | C# | :star::star::star: | |
 | SQL | :star::star::star: | |
 | JavaScript | :star::star::star: | |
 | HTML | :star::star: | |
 | CSS | :star::star: | |
-| Bash | :star::star: | |
+| shell | :star::star: | |
 | Java | :star::star: | |
 | TypeScript | :star::star: | |
 | SCCS | :star: | |
 | PHP | :star: | |
 | C | :star: | |
-| C++ | :star: | |
 | lua | :star: | |
 
 ## 自然言語
 
 | Item | Level | Note |
 |---|---|---|
-| 英語 | :star: | 苦手です。 |
+| 英語 | :star: | ドキュメント等は翻訳して読んでいます |
 
 ## フレームワーク
 
