@@ -1,5 +1,8 @@
 # 技術スタック
 
+現在はPythonを中心とした仕事を請けています。
+得意領域はバックエンドです。アーキテクチャと技術選定を行い、保守性の高い開発プロジェクトを構成できます。
+
 ## レイヤー
 
 | | | |
@@ -43,8 +46,8 @@
 
 | | | |
 |---|---|---|
+| FastAPI | :star::star::star::star: | |
 | Django | :star::star::star: | |
-| FastAPI | :star::star::star: | 業務経験なし |
 | Vue.js | :star::star::star: | Nuxt.js Vuetify 業務経験なし |
 | ASP.NET(MVC5) | :star::star: | |
 | Xamarin(Android) | :star::star: | 業務経験なし |
@@ -65,7 +68,7 @@
 | PostgreSQL | :star::star::star: | |
 | SQLServer | :star::star::star: | |
 | MySQL | :star::star::star: | |
-| Oracle | :star::star: | |
+| Oracle | :star: | |
 
 | | | |
 |---|---|---|
