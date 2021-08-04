@@ -2,11 +2,12 @@
 
 ## レイヤー
 
-| Item | Level | Note |
+| | | |
 |---|---|---|
 | バックエンド | :star::star::star::star: | |
 | フロントエンド | :star::star::star: | |
 | インフラ | :star::star::star: | |
+| ネットワーク | :star::star: | |
 | データ分析 | :star::star: | |
 | 自然言語処理 | :star::star: | |
 | 機械学習 | :star: | |
@@ -14,7 +15,7 @@
 
 ## プログラム言語
 
-| Item | Level | Note |
+| | | |
 |---|---|---|
 | VBA | :star::star::star::star::star: | VBAは得意ですが、VBA中心の案件はお断りしています |
 | Python | :star::star::star::star: | |
@@ -33,13 +34,14 @@
 
 ## 自然言語
 
-| Item | Level | Note |
+| | | |
 |---|---|---|
+| 日本語 | :star::star::star::star::star: | |
 | 英語 | :star: | ドキュメント等は翻訳して読んでいます |
 
 ## フレームワーク
 
-| Item | Level | Note |
+| | | |
 |---|---|---|
 | Django | :star::star::star: | |
 | FastAPI | :star::star::star: | 業務経験なし |
@@ -50,7 +52,7 @@
 
 ## PaaS
 
-| Item | Level | Note |
+| | | |
 |---|---|---|
 | AWS | :star::star::star: | |
 | Azure | :star: | |
@@ -58,21 +60,21 @@
 
 ## ミドルウェア
 
-| Item | Level | Note |
+| | | |
 |---|---|---|
 | PostgreSQL | :star::star::star: | |
 | SQLServer | :star::star::star: | |
 | MySQL | :star::star::star: | |
 | Oracle | :star::star: | |
 
-| Item | Level | Note |
+| | | |
 |---|---|---|
 | Docker | :star::star::star: | |
 | ElasticSearch | :star::star: | |
 
 ## CI/CD
 
-| Item | Level | Note |
+| | | |
 |---|---|---|
 | GitHub Actions | :star::star: | |
 | CircleCI | :star::star: | |
