@@ -1,6 +1,6 @@
 site_name: sasano8
-site_description: A next-generation HTTP client for Python.
-site_url: https://www.python-httpx.org/
+site_description: sasano8's portfolio
+# site_url: https://www.python-httpx.org/
 
 theme:
   name: "material"
