@@ -19,9 +19,10 @@ sasano8と申します。
 
 ## コンタクト
 
-- [support@ys-method.com](mailto:support@ys-method.com)
-- [github](https://github.com/sasano8/)
-- [zenn](https://zenn.dev/sasano8)
+- :octicons-mail-16: – [support@ys-method.com](mailto:support@ys-method.com){ target="_blank"}
+- :fontawesome-brands-twitter: – [sasanoha____](https://twitter.com/sasanoha____){ target="_blank"}
+- :material-github: – [sasano8](https://github.com/sasano8/){ target="_blank"}
+- <img class="twemoji" src="https://simpleicons.org/icons/zenn.svg" alt="zenn" /> – [sasano8](https://zenn.dev/sasano8){ target="_blank" }
 
 !!! warning
     次の意向を気にする場合は、マッチしないかもしれません。
