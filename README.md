@@ -21,3 +21,7 @@ make doc-serve
 material
 fontawesome
 octicons
+
+# ロゴ
+
+https://www.brandcrowd.com/で作成した。

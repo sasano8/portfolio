@@ -3,6 +3,7 @@ site_description: sasano8's portfolio
 # site_url: https://www.python-httpx.org/
 
 theme:
+  logo: img/logo2.png
   name: "material"
   language: "ja"
   palette:
@@ -23,7 +24,7 @@ theme:
 nav:
   - はじめに: "index.md"
   - 技術スタック: "tech_stack.md"
-  - 技術経歴: "backgrounds.md"
+  - 技術経歴: "background.md"
 
 markdown_extensions:
   - admonition
