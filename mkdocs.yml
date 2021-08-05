@@ -3,6 +3,7 @@ site_description: sasano8's portfolio
 # site_url: https://www.python-httpx.org/
 
 theme:
+  favicon: img/logo2.png
   logo: img/logo2.png
   name: "material"
   language: "ja"
