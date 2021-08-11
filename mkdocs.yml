@@ -36,12 +36,14 @@ plugins:
       add_full_urls: false
       enumerate_headings: true
       enumerate_figures: true
-      add_cover_page: true
-      cover_page_template: ""
-      exclude:
       add_print_site_banner: true
       print_site_banner_template: "docs/print_site_banner.tpl"
       path_to_pdf: "" # pdfを指定でダウンロードボタン表示
+      add_cover_page: true
+      cover_page_template: ""
+      # exclude:
+      #   - "index.md"
+
 
 
 nav:
