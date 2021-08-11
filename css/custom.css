@@ -8,3 +8,6 @@ div.autodoc-members {
   padding-left: 20px;
   margin-bottom: 15px;
 }
+
+/* table { page-break-inside:auto }
+tr    { page-break-inside:auto; page-break-after:auto } */
