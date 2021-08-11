@@ -1,4 +1,12 @@
+# Introduction
+
+mkdocsを利用した静的サイトジェネレータです。マークダウンファイルの簡単な管理で静的サイトを生成できます。
+
 # Getting Started
+
+## ドキュメントサーバの起動
+
+ドキュメント編集環境を構築するには次のコマンドでドキュメントサーバを起動してください。起動したドキュメントサーバのURLにアクセスするとドキュメントのプレビューを確認できます。
 
 ``` python
 poetry install
@@ -8,29 +16,64 @@ poetry install
 make doc-serve
 ```
 
-# ドキュメント
+## ドキュメントのビルド
+
+次のコマンドを実行すると`site`ディレクトリに成果物が出力されます。
+
+``` shell
+make doc-build
+```
+
+# ディレクトリ・ファイル構成
+
+## mkdocs.yml
+
+ドキュメント生成時のコンフィグファイルです。
+
+## docs
+
+静的サイトを生成するためのドキュメントです。
+
+
+# ドキュメント編集ガイド
+
+基本的な使い方は公式サイトを参照ください。
 
 - [mkdocs](https://squidfunk.github.io/mkdocs-material/reference/abbreviations/)
 
-# アイコンリスト
+## アイコンリスト
 
-次のリンクからアイコンを検索できます。
+アイコンを配置する時、次のリンクからアイコンを検索できます。
 
 - https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#emoji
 
-material
-fontawesome
-octicons
+### material icons
 
-# ロゴ
+Google社が公開しているマテリアルデザインのガイドラインに基づいて作成された公式のアイコンセットです。
+
+
+### fontawesome
+
+Font Awesomeとは、商用利用が可能で、自身のウェブサイトやアプリケーション、WordやPDFなどのドキュメントにも埋め込めるWebアイコンフォントです。
+
+### octicons
+軽量のアイコン集です。基本的なアイコンはそろっている。
+
+## ロゴ
 
 https://www.brandcrowd.com/で作成した。
 
 
-# pdf化
+## 印刷・pdf出力
 
-ページの改行やレンダリングの問題があり、完璧なpdfは難しい。
-ドキュメントサーバを起動して次のコマンド出力して力技で編集する。
+### mkdocs-print-site-plugin
+
+mkdocs-print-site-pluginを使って、すべてのページをまとめた印刷用ページを生成する。ブラウザの印刷からサイト全体を印刷・PDF出力が可能。
+
+### wkhtmltopdf
+
+wkhtmltopdfはブラウザのレンダリングなしでPDFを出力できる。
+ただし、うまく出力できなかった（svgに未対応）。
 
 ```
 mkdir pdf
@@ -38,8 +81,3 @@ wkhtmltopdf http://localhost:8001/ pdf/p1.pdf
 wkhtmltopdf http://localhost:8001/tech_stack pdf/p2.pdf
 wkhtmltopdf http://localhost:8001/background pdf/p3.pdf
 ```
-
-mkdocs-pdf-export-plugin + weasyprintはsvgが上手く出力できなかった。
-
-オンラインエディタ
-https://smallpdf.com/jp/delete-pages-from-pdf?job=1628655952929
