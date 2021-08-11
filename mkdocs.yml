@@ -1,6 +1,6 @@
-site_name: sasano8
-site_description: sasano8's portfolio
-# site_url: https://www.python-httpx.org/
+site_name: ポートフォリオ
+# site_description: sasano8's portfolio
+site_url: https://portfolio.ys-method.com/
 
 theme:
   favicon: img/logo2.png
@@ -26,21 +26,21 @@ theme:
 plugins:
   - search
   - print-site:
-      add_to_navigation: true
+      add_print_site_banner: true
+      print_site_banner_template: "docs/print_site_banner.tpl"
       print_page_title: '印刷用ページ'
       # Table of contents
-      add_table_of_contents: true
       toc_title: '目次'
       toc_depth: 6
       # Content-related
       add_full_urls: false
       enumerate_headings: true
       enumerate_figures: true
-      add_print_site_banner: true
-      print_site_banner_template: "docs/print_site_banner.tpl"
       path_to_pdf: "" # pdfを指定でダウンロードボタン表示
+      add_to_navigation: true
       add_cover_page: true
       cover_page_template: ""
+      add_table_of_contents: true
       # exclude:
       #   - "index.md"
 
