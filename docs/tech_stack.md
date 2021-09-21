@@ -46,7 +46,7 @@
 
 | | | |
 |---|---|---|
-| FastAPI | :star::star::star::star: | |
+| FastAPI | :star::star::star::star: | （補足）pytest + sqlalchemyなどと組み合わせ |
 | Django | :star::star::star: | |
 | Vue.js | :star::star::star: | Nuxt.js Vuetify 業務経験なし |
 | ASP.NET(MVC5) | :star::star: | |
