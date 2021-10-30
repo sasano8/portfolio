@@ -14,6 +14,8 @@ sasano8と申します。
 主に内部向け業務アプリケーションを中心に開発してきましたが、
 より大きいユーザーの声とサービスの成長を体感できるBtoCモデルに最近は興味があります。
 
+得意とする領域はバックエンドでデータ収集と前処理に定評があります。
+
 ぜひ、あなたのサービスに貢献する機会をください。
 よい出逢いになれば幸いです。
 
@@ -23,9 +25,3 @@ sasano8と申します。
 - :fontawesome-brands-twitter: – [sasanoha____](https://twitter.com/sasanoha____){ target="_blank"}
 - :material-github: – [sasano8](https://github.com/sasano8/){ target="_blank"}
 - <img class="twemoji" src="https://simpleicons.org/icons/zenn.svg" alt="zenn" /> – [sasano8](https://zenn.dev/sasano8){ target="_blank" }
-
-!!! warning
-    次の意向を気にする場合は、マッチしないかもしれません。
-
-    - 朝は少し苦手です
-    - リモートワークを希望です。必要に応じて出社するのは問題ありません

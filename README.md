@@ -70,14 +70,18 @@ https://www.brandcrowd.com/で作成した。
 
 mkdocs-print-site-pluginを使って、すべてのページをまとめた印刷用ページを生成する。ブラウザの印刷からサイト全体を印刷・PDF出力が可能。
 
-### wkhtmltopdf
+mkdocs.ymlのexcludeで任意のページを除外することが可能。
 
-wkhtmltopdfはブラウザのレンダリングなしでPDFを出力できる。
-ただし、うまく出力できなかった（svgに未対応）。
+``` yml
+      exclude:
+        - "index.md"
+```
 
+PDF印刷などで改ページの都合が悪い場合は、次のコードを任意の行に配置することで改ページを強制できる。
+
+``` html
+<div style="page-break-before:always" /></div>
 ```
-mkdir pdf
-wkhtmltopdf http://localhost:8001/ pdf/p1.pdf
-wkhtmltopdf http://localhost:8001/tech_stack pdf/p2.pdf
-wkhtmltopdf http://localhost:8001/background pdf/p3.pdf
-```
+
+ページは非表示の方がよさそう。
+表紙と目次が不要ならブラウザで印刷ページを指定できる。ちょっと見つけづらい。

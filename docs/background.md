@@ -9,12 +9,12 @@ ETLなどデータの前処理に活用できるPython用のコレクション�
 
 | | |
 |-|-|
-| 期間 | 2021年6月 ~ 2021年9月 |
-| フェーズ | 要件定義～テスト |
+| 期間 | 2021年7月 ~ 2021年9月 |
+| フェーズ | 設計～テスト |
 
 - Python
 - pytest
-- github actions
+- GitHub Actions
 
 ## データ収集基盤の構築
 
@@ -30,6 +30,8 @@ ETLなどデータの前処理に活用できるPython用のコレクション�
 - SQL（PostgreSQL）
 - ElasicSearch
 - ETL（Selenium/Beautiful Soup/SQL）
+
+<div style="page-break-before:always" />
 
 ## 代理店手数料試算ツールの実装
 
