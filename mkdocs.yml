@@ -1,6 +1,9 @@
 site_name: ポートフォリオ
 # site_description: sasano8's portfolio
 site_url: https://portfolio.ys-method.com/
+# repo_name: encode/httpx
+repo_url: https://github.com/sasano8/portfolio/
+edit_uri: "edit/main/docs/"
 
 theme:
   favicon: img/logo2.png
@@ -19,15 +22,11 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
 
-# repo_name: encode/httpx
-# repo_url: https://github.com/encode/httpx/
-# edit_uri: ""
-
 plugins:
   - search
   - print-site:
       add_print_site_banner: true
-      print_site_banner_template: "docs/print_site_banner.tpl"
+      print_site_banner_template: "docs/overrides/print_site_banner.tpl"
       print_page_title: '印刷用ページ'
       # Table of contents
       toc_title: '目次'
@@ -66,5 +65,5 @@ markdown_extensions:
 
 
 extra_css:
-  - css/custom.css
+  - overrides/css/custom.css
 
