@@ -1,4 +1,4 @@
-INHERIT: ./mkdocs_base.yml
+INHERIT: ./common/mkdocs_base.yml
 
 site_name: ポートフォリオ
 # site_description: sasano8's portfolio
