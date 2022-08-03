@@ -18,3 +18,6 @@ doc-build:
 
 doc-serve: doc-build
 	@poetry run mkdocs serve -a localhost:8001
+
+grep-todo:
+	@grep -n -e "TODO:" -e "FIXME:" -r . || true
