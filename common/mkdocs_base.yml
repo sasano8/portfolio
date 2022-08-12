@@ -47,9 +47,18 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
   - attr_list
   # - toc:
   #   permalink: 'true'
 
 extra_css:
   - overrides/css/custom.css
+  - https://unpkg.com/mermaid@8.0.0/dist/mermaid.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js
