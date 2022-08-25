@@ -12,6 +12,8 @@ update-common:
 	@curl https://raw.githubusercontent.com/sasano8/portfolio/main/docs/overrides/css/custom.css -o docs/overrides/css/custom.css
 	@curl https://raw.githubusercontent.com/sasano8/portfolio/main/.editorconfig -o .editorconfig
 	@curl https://raw.githubusercontent.com/sasano8/portfolio/main/.github/workflows/github_pages.yml -o .github/workflows/github_pages.yml
+	@mkdir -p .vscode
+	@curl https://raw.githubusercontent.com/sasano8/portfolio/main/.vscode/.gitignore -o .vscode/.gitignore
 
 doc-build:
 	@poetry run mkdocs build
