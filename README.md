@@ -85,3 +85,9 @@ PDF印刷などで改ページの都合が悪い場合は、次のコードを�
 
 ページは非表示の方がよさそう。
 表紙と目次が不要ならブラウザで印刷ページを指定できる。ちょっと見つけづらい。
+
+# ublacklist
+
+次をクリックするとGoogle Chrome 拡張機能「uBlacklist」に拒否サイトを追加できます。（いずれここではないどこかに移動）
+
+- [blacklist](chrome-extension://pncfbmialoiaghdehhbnbhkkgmjanfhe/pages/options.html?addSubscriptionName=ncaq-uBlacklistRule&addSubscriptionURL=https://github.com/sasano8/portfolio/edit/main/ublacklist.txt)
