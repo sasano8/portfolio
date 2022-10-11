@@ -88,6 +88,8 @@ PDF印刷などで改ページの都合が悪い場合は、次のコードを�
 
 # ublacklist
 
+[こちら](https://iorate.github.io/ublacklist/subscribe?name=ncaq-uBlacklistRule&url=https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlacklist.txt)
+
 [こちら](chrome-extension://pncfbmialoiaghdehhbnbhkkgmjanfhe/pages/options.html?addSubscriptionName=ncaq-uBlacklistRule&addSubscriptionURL=https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlacklist.txt) をクリックするとGoogle Chrome 拡張機能「uBlacklist」に拒否サイトを追加できます。（いずれここではないどこかに移動）
 
 
