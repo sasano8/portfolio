@@ -27,3 +27,6 @@ grep-todo:
 openapi-generator-list:
 	@docker run --rm openapitools/openapi-generator-cli list
 	# docker run --rm -u `id -u`:`id -g` -v ${PWD}:/local openapitools/openapi-generator-cli generate -g ${GENERATOR} -i /local/${INPUT} -o /local/${OUT}
+
+format-sql:
+	@sqlfluff fix --dialect postgres .
