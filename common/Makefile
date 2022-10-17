@@ -23,3 +23,7 @@ doc-serve: doc-build
 
 grep-todo:
 	@grep -n -e "TODO:" -e "FIXME:" -r --exclude="Makefile" --exclude-dir=".venv" . || true
+
+openapi-generator-list:
+	@docker run --rm openapitools/openapi-generator-cli list
+	# docker run --rm -u `id -u`:`id -g` -v ${PWD}:/local openapitools/openapi-generator-cli generate -g ${GENERATOR} -i /local/${INPUT} -o /local/${OUT}
