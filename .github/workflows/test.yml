@@ -1,0 +1,6 @@
+name: Run test
+
+on:
+  push:
+  pull_request:
+
