@@ -4,4 +4,9 @@ on:
   push:
   pull_request:
 
-jobs: {}
+jobs:
+  container-test:
+    runs-on: ubuntu-latest
+#     strategy:
+#       matrix:
+#         python-version: [3.8, 3.9]
