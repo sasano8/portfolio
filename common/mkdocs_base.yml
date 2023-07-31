@@ -19,7 +19,8 @@ theme:
         name: Switch to light mode
 
 plugins:
-  - search
+  - search:
+      lang: "ja"
   - print-site:
       add_print_site_banner: true
       print_site_banner_template: "docs/overrides/print_site_banner.tpl"
