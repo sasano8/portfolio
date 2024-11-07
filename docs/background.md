@@ -13,6 +13,7 @@
 - Python（FastAPI/Flask）
 - Gitlab CI/CD
 - Kubernetes
+- Ansible
 
 ## コレクション処理フレームワークの開発
 

@@ -79,6 +79,17 @@
 | Kubernetes | :star::star::star: | microk8s |
 | ElasticSearch | :star::star: | |
 
+| | | |
+|---|---|---|
+| Prefect | :star: | |
+| Airflow | :star: | |
+| AlgoWorkflow | :star: | |
+
+| | | |
+|---|---|---|
+| Ansible | :star::star: | |
+| Teraform | :star: | |
+
 ## CI/CD
 
 | | | |
