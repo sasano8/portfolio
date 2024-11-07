@@ -28,9 +28,6 @@ jobs:
         # with:
         #   version: "0.4.30"
 
-      # - name: Set up Python ${{ matrix.python-version }}
-      #   run: uv python install ${{ matrix.python-version }}
-
       - name: Setup Python
         uses: actions/setup-python@v3
         with:
@@ -41,8 +38,9 @@ jobs:
         run: |
           curl -LsSf https://astral.sh/uv/install.sh | sh
 
-      # - name: Add path for Poetry
-      #   run: echo "$HOME/.poetry/bin" >> $GITHUB_PATH
+      # actions/setup-python を使った方がキャッシュが効くらしいので使わない
+      # - name: Set up Python ${{ matrix.python-version }}
+      #   run: uv python install ${{ matrix.python-version }}
 
       - name: Load cached venv
         id: cache-venv
@@ -55,10 +53,6 @@ jobs:
         if: steps.cache-venv.outputs.cache-hit != 'true'
         # run: uv sync --all-extras --dev
         run: uv sync --group docs
-
-      # - name: Install Dependencies
-      #   if: steps.cache-venv.outputs.cache-hit != 'true'
-      #   run: poetry install --only docs
 
       - name: Build the document
         run: make doc-build
