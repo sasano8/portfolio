@@ -5,23 +5,20 @@ sasano8と申します。
 
 ## 自己紹介
 
-東京在住でフリーランス（2018年8月～）として活動しています。
-エンジニア歴は10年程度です。
+宇都宮在住で Python のプロフェッショナル（2018年8月～）として活動しています。
 
-キャリアの多くはSIerの下請けとして仕事に関わり、
-金融・保険などのミッションクリティカルなシステムに対して、丁寧な実装とテストを遂行してきました。
+ライブラリ・アプリケーションの開発からデータ分析基盤（インフラ）の整備など、
+近年急速に発展しているAIを取り巻く環境の整備に貢献してきました。
 
-主に内部向け業務アプリケーションを中心に開発してきましたが、
-より大きいユーザーの声とサービスの成長を体感できるBtoCモデルに最近は興味があります。
+得意とする領域はバックエンドで、Python を活用したソリューションを提供できることが強みです。
 
-得意とする領域はバックエンドでデータ収集と前処理に定評があります。
+新しい技術やツールの習得にも積極的で、常に最新の情報を取り入れる努力を怠りません。
 
-ぜひ、あなたのサービスに貢献する機会をください。
-よい出逢いになれば幸いです。
+皆様と一緒に新しいプロジェクトに取り組むことを楽しみにしております。
+
+
 
 ## コンタクト
 
-- :octicons-mail-16: – [support@ys-method.com](mailto:support@ys-method.com){ target="_blank"}
-- :fontawesome-brands-twitter: – [sasanoha____](https://twitter.com/sasanoha____){ target="_blank"}
 - :material-github: – [sasano8](https://github.com/sasano8/){ target="_blank"}
 - <img class="twemoji" src="https://simpleicons.org/icons/zenn.svg" alt="zenn" /> – [sasano8](https://zenn.dev/sasano8){ target="_blank" }
