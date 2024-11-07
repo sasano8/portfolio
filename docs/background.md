@@ -10,7 +10,7 @@
 | 期間 | 2021年12月 ~ 2024年6月 |
 | フェーズ | 要件定義～運用 |
 
-- Python（FastApi/Flask）
+- Python（FastAPI/Flask）
 - Gitlab CI/CD
 - Kubernetes
 
