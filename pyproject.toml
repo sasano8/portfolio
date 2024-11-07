@@ -1,28 +1,29 @@
-[tool.poetry]
+[project]
 name = "portfolio"
-version = "0.1.0"
-description = ""
 authors = ["sasano8 <y-sasahara@ys-method.com>"]
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
 
-[tool.poetry.dependencies]
-python = "^3.8"
+[dependency-groups]
+dev = [
+]
+test = [
+    "pre-commit>=2.12.0",
+    # black = "^20.8b1"
+    # isort = "^5.8.0"
+    # flake8 = "^3.9.0"
+    # mypy = "^0.812"
+    "pytest>=6.2.2",
+    "pytest-cov>=3.0.0"
+]
+docs = [
+    "mkdocs>=1.4.2",
+    "mkautodoc>=0.2.0",
+    "mkdocs-material>=8.5.8",
+    "pymdown-extensions>=10.0",
+    "mkdocs-print-site-plugin>=2.3.4",
+]
 
-[tool.poetry.group.test.dependencies]
-pre-commit = "^2.12.0"
-black = "^20.8b1"
-isort = "^5.8.0"
-flake8 = "^3.9.0"
-mypy = "^0.812"
-pytest = "^6.2.2"
-pytest-cov = "^3.0.0"
-
-[tool.poetry.group.docs.dependencies]
-mkdocs = "^1.4.2"
-mkautodoc = "^0.2.0"
-mkdocs-material = "^8.5.8"
-pymdown-extensions = "^10.0"
-mkdocs-print-site-plugin = "^2.3.4"
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
