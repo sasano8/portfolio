@@ -9,5 +9,5 @@ edit_uri: "edit/main/docs/"
 
 nav:
   - はじめに: "index.md"
+  - 職務経歴: "background.md"
   - 技術スタック: "tech_stack.md"
-  - 技術経歴: "background.md"
