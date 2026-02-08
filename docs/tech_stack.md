@@ -90,7 +90,7 @@
 | | | |
 |---|---|---|
 | Ansible | :star::star: | |
-| Teraform | :star: | |
+| Terraform | :star: | |
 
 ## 機械学習・AI
 
