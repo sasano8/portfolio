@@ -17,7 +17,7 @@
 | バックエンド | :star::star::star::star: | |
 | フロントエンド | :star::star::star: | |
 | インフラ | :star::star::star: | |
-| ネットワーク | :star::star: | |
+| ネットワーク | :star::star: | TCPプロキシー開発経験あり |
 | 機械学習 | :star::star: | |
 | データ分析 | :star::star: | |
 | 自然言語処理 | :star::star: | |
@@ -37,6 +37,7 @@
 | shell | :star::star::star: | |
 | Java | :star::star: | |
 | TypeScript | :star::star: | |
+| Go | :star::star: | |
 | SCCS | :star: | |
 | PHP | :star: | |
 | C | :star: | |
