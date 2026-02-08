@@ -7,4 +7,4 @@
 ## 通常
 
 - [x] docs/tech_stack.md に MQTT(Mosquitto)、Fiware を追加
-- [ ] docs/tech_stack.md に強化学習スキルを追加検討
+- [x] docs/tech_stack.md に強化学習スキルを追加検討
