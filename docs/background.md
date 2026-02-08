@@ -65,7 +65,7 @@ ETLなどデータの前処理に活用できるPython用のコレクション�
 - AWS
 - Python（Django）
 - SQL（PostgreSQL）
-- ElasicSearch
+- ElasticSearch
 - ETL（Selenium/Beautiful Soup/SQL）
 
 <div style="page-break-before:always" />
