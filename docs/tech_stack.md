@@ -78,6 +78,8 @@
 | Docker | :star::star::star::star: | |
 | Kubernetes | :star::star::star: | microk8s |
 | ElasticSearch | :star::star: | |
+| MQTT | :star::star: | Mosquitto |
+| Fiware | :star: | デジタルツイン研究開発で使用 |
 
 | | | |
 |---|---|---|
