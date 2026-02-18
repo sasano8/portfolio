@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://portfolio.ys-method.com/</loc>
+         <loc>https://sasano8.github.io/portfolio/</loc>
          <lastmod>2026-02-18</lastmod>
     </url>
     <url>
-         <loc>https://portfolio.ys-method.com/background/</loc>
+         <loc>https://sasano8.github.io/portfolio/background/</loc>
          <lastmod>2026-02-18</lastmod>
     </url>
     <url>
-         <loc>https://portfolio.ys-method.com/tech_stack/</loc>
+         <loc>https://sasano8.github.io/portfolio/tech_stack/</loc>
          <lastmod>2026-02-18</lastmod>
     </url>
 </urlset>
