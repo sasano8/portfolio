@@ -63,3 +63,4 @@ extra_css:
 
 extra_javascript:
   - https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js
+  - overrides/js/ai_assistant.js
