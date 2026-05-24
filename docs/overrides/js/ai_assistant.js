@@ -1,67 +1,81 @@
 /* AI Assistant Widget for Portfolio Site */
+
+/*
+ * Capture the script element reference before the IIFE runs so that
+ * document.currentScript is still available at the top level.
+ * This is used to resolve the search index URL regardless of the
+ * page's depth in the navigation hierarchy.
+ */
+var _aiScriptEl = document.currentScript;
+
 (function () {
   'use strict';
 
-  var SYSTEM_PROMPT = [
-    'あなたはポートフォリオサイトのAIアシスタントです。',
-    'このサイトの所有者（バックエンドエンジニア）についての質問に答えてください。',
-    '丁寧かつ簡潔に日本語で答えてください。',
-    '関係のない話題については丁寧にお断りください。',
-    '',
-    '## 自己紹介',
-    '宇都宮在住のバックエンドエンジニアです。2018年よりPythonを軸に、要件整理から実装・運用まで一気通貫で担当しています。',
-    '近年は5人規模の研究開発案件で、連合学習・デジタルツイン・データ分析基盤を横断しながら、技術検証の推進と開発リードを担ってきました。',
-    'Python（FastAPI/Flask）に加え、AWS・Kubernetes・Ansibleを使った実装経験があります。',
-    'データパイプライン・ストリーミング処理・運用設計を強みとしており、今後はストリームやイベントと生成AIを連携したより高度なイベントプロセシングに関心があります。',
-    '',
-    '## 職務経歴',
-    '',
-    '### 連合学習・デジタルツイン研究開発支援（2025年2月〜2026年3月）',
-    '- 5名体制の開発チームにて、設計・実装・検証を担当',
-    '- コンテナベースのサーバーレス実行基盤を1人で設計・開発',
-    '- 50台規模のAnsible環境構築（再現性・構築コスト削減）',
-    '- HTTP/MQTT/TCPプロトコル変換アダプター・TCPプロキシ開発',
-    '- デジタルツインのストリーム処理研究開発（Fiware/AWS Lambda）',
-    '- 強化学習によるロードバランシング機能の研究開発',
-    '- 使用技術: Python, AWS（EC2/Lambda）, Ansible, MQTT（Mosquitto）, Fiware, 強化学習',
-    '',
-    '### 連合学習・データ分析基盤の研究開発（2021年12月〜2024年6月）',
-    '- 5名体制で連合学習アプリケーション開発とデータ分析・ストリーミング基盤の整備',
-    '- 使用技術: Python（FastAPI/Flask）, Gitlab CI/CD, Kubernetes, Ansible',
-    '',
-    '### コレクション処理フレームワークの開発（2021年7月〜2021年9月）',
-    '- ETLデータ前処理用Pythonフレームワーク（OSS）PNQを開発',
-    '- 1人での設計〜テスト: Python, pytest, GitHub Actions',
-    '',
-    '### データ収集基盤の構築（2019年3月〜2020年6月）',
-    '- コンサルティングファームへのデータ収集基盤構築、ETL実装・業務支援',
-    '- 使用技術: AWS, Python（Django）, PostgreSQL, ElasticSearch, Selenium',
-    '',
-    '### 代理店手数料試算ツールの実装（2018年10月〜2019年2月）',
-    '- 保険代理店向け手数料試算ツール改修',
-    '- 使用技術: VBA, SQL（SQLServer）, C# ASP.NET',
-    '',
-    '### 予算管理システム（Tagetik）の導入（2018年6月〜2018年9月）',
-    '- 生命保険会社様へ予算管理システムの導入',
-    '- 使用技術: Tagetik, SQLServer, JBOSS',
-    '',
-    '### サーバパラメータ管理ツールの開発（2016年6月〜2017年7月）',
-    '- 金融会社様の大規模システムリプレースに伴う支援ツール開発',
-    '- 使用技術: VBA, SQL（MySQL）',
-    '',
-    '## 技術スタック（主要）',
-    '- プログラム言語: Python（5★）, VBA（5★）, C#（3★）, SQL（3★）, JavaScript（3★）, Go（2★）',
-    '- フレームワーク: FastAPI（4★）, Flask（4★）, Django（3★）, Vue.js（3★）, React（2★）',
-    '- クラウド: AWS（3★）, Azure（1★）, GCP（1★）',
-    '- DB: PostgreSQL（3★）, SQLServer（3★）, MySQL（3★）, Oracle（1★）',
-    '- インフラ: Docker（4★）, Kubernetes（3★）, ElasticSearch（2★）, MQTT（2★）, Ansible（2★）',
-    '- CI/CD: GitLab CI/CD（3★）, GitHub Actions（3★）, CircleCI（2★）',
-    '- 機械学習・AI: 強化学習（2★）',
-    '- 自然言語: 日本語（5★）, 英語（1★・ドキュメント読み取りのみ）',
-    '',
-    '## 最終学歴',
-    '帝京平成大学 中退 / 江戸川高等学校 卒業'
-  ].join('\n');
+  /* ---- System prompt preamble (role instructions only) ---- */
+  var SYSTEM_PREAMBLE =
+    'あなたはポートフォリオサイトのAIアシスタントです。\n' +
+    'このサイトの所有者（バックエンドエンジニア）についての質問に答えてください。\n' +
+    '丁寧かつ簡潔に日本語で答えてください。\n' +
+    '関係のない話題については丁寧にお断りください。\n\n' +
+    '以下にサイトのコンテンツを示します。これを参考に回答してください。\n\n';
+
+  /* ---- Resolve the URL for search/search_index.json ---- */
+  function getSearchIndexUrl() {
+    /* Prefer the MkDocs Material __config JSON (always present). */
+    var cfgEl = document.getElementById('__config');
+    if (cfgEl) {
+      try {
+        var cfg = JSON.parse(cfgEl.textContent || cfgEl.innerText);
+        if (typeof cfg.base === 'string') {
+          return cfg.base + '/search/search_index.json';
+        }
+      } catch (e) { /* fall through */ }
+    }
+    /* Fallback: derive root from the script's absolute src URL.
+       The script lives at [root]/overrides/js/ai_assistant.js. */
+    var src = (_aiScriptEl && _aiScriptEl.src) || '';
+    if (src) {
+      var parts = src.split('/');
+      parts.splice(-3);          /* remove overrides/js/ai_assistant.js */
+      return parts.join('/') + '/search/search_index.json';
+    }
+    return 'search/search_index.json';
+  }
+
+  /* ---- Strip HTML tags to get plain text ---- */
+  function stripHtml(html) {
+    var tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    return (tmp.textContent || tmp.innerText || '').replace(/\s+/g, ' ').trim();
+  }
+
+  /* ---- Build system prompt from search index data ---- */
+  function buildSystemPrompt(data) {
+    var lines = [SYSTEM_PREAMBLE];
+    var docs = data.docs || [];
+    for (var i = 0; i < docs.length; i++) {
+      var doc = docs[i];
+      /* Skip the print-site aggregation page to avoid duplication. */
+      if (doc.location && doc.location.indexOf('print_page') !== -1) { continue; }
+      if (doc.title) { lines.push('## ' + doc.title); }
+      if (doc.text)  { lines.push(stripHtml(doc.text)); }
+      lines.push('');
+    }
+    return lines.join('\n');
+  }
+
+  /* ---- Cache the resolved system prompt across calls ---- */
+  var _systemPromptPromise = null;
+
+  function loadSystemPrompt() {
+    if (!_systemPromptPromise) {
+      _systemPromptPromise = fetch(getSearchIndexUrl())
+        .then(function (res) { return res.json(); })
+        .then(function (data) { return buildSystemPrompt(data); })
+        .catch(function () { return SYSTEM_PREAMBLE; });
+    }
+    return _systemPromptPromise;
+  }
 
   var STORAGE_KEY = 'ai_assistant_config';
 
@@ -316,35 +330,38 @@
   };
 
   AIAssistant.prototype._callAPI = function () {
-    var messages = [{ role: 'system', content: SYSTEM_PROMPT }].concat(
-      this.messages.slice(-20)
-    );
+    var self = this;
+    var userMessages = this.messages.slice(-20);
 
-    var body = JSON.stringify({
-      model: this.config.model,
-      messages: messages,
-      max_tokens: 1000,
-      temperature: 0.7
-    });
+    return loadSystemPrompt().then(function (systemPrompt) {
+      var messages = [{ role: 'system', content: systemPrompt }].concat(userMessages);
 
-    return fetch(this.config.apiEndpoint, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + this.config.apiKey
-      },
-      body: body
-    }).then(function (res) {
-      if (!res.ok) {
-        return res.json().catch(function () { return {}; }).then(function (data) {
-          var msg = (data && data.error && data.error.message) || res.statusText;
-          throw new Error(msg);
-        });
-      }
-      return res.json();
-    }).then(function (data) {
-      var content = data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
-      return content || '応答を取得できませんでした。';
+      var body = JSON.stringify({
+        model: self.config.model,
+        messages: messages,
+        max_tokens: 1000,
+        temperature: 0.7
+      });
+
+      return fetch(self.config.apiEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + self.config.apiKey
+        },
+        body: body
+      }).then(function (res) {
+        if (!res.ok) {
+          return res.json().catch(function () { return {}; }).then(function (data) {
+            var msg = (data && data.error && data.error.message) || res.statusText;
+            throw new Error(msg);
+          });
+        }
+        return res.json();
+      }).then(function (data) {
+        var content = data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
+        return content || '応答を取得できませんでした。';
+      });
     });
   };
 
