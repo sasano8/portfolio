@@ -60,10 +60,8 @@ MLOPS 基盤構築を Ansible で自動化。構築の作業コストを削減�
 - フェーズ: 設計～テスト
 - チーム規模: １人
 
-ETLなどデータの前処理に活用できるPython用のコレクション処理フレームワーク（OSS）を開発した。
+ETLなどデータの前処理に活用できるPython用のコレクション処理フレームワーク（[参考サイト](https://sasano8.github.io/pnq/)）を開発した。
 非同期なイテレーションにも対しても活用でき、プロトタイピング開発に活用可能。
-
-- [PNQ](https://sasano8.github.io/pnq/)
 
 - Python
 - pytest
