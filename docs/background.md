@@ -89,7 +89,9 @@ AWS（EC2 / RDS）上にインフラを構築。PostgreSQL を RDS に、Django 
 - ETL / スクレイピング（Selenium / Beautiful Soup / SQL）
 - 業務ドメイン: OSINT・デジタルフォレンジック・デューデリジェンス
 
+<!--
 <div style="page-break-before:always" />
+-->
 
 ## 代理店手数料試算ツールの実装
 
