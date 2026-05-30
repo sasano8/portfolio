@@ -2,6 +2,14 @@
 
 得意領域はPythonを中心としたバックエンドです。アーキテクチャと技術選定を行い、保守性の高い開発プロジェクトを構成できます。
 
+## 開発マシン
+
+| | | |
+|---|---|---|
+| Windows（WSL） | :star::star::star::star::star: | PC貸与の場合は Windows PC でお願いしております |
+| Mac | :star: | ほぼ触ったことがありません |
+| linux | :star::star::star::star::star: |  |
+
 ## 自然言語
 
 | | | |
