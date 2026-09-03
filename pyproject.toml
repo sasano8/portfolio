@@ -22,7 +22,7 @@ test = [
 docs = [
     "mkdocs>=1.4.2",
     "mkautodoc>=0.2.0",
-    "mkdocs-material>=8.5.8",
+    "mkdocs-material>=9.7.7",
     "pymdown-extensions>=10.0",
     "mkdocs-print-site-plugin>=2.3.4",
 ]
