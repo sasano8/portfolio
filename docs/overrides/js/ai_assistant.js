@@ -209,7 +209,7 @@
       });
     }
 
-    var status = element('p', 'ai-settings-note', 'Using Chrome Built-in AI');
+    var status = element('p', 'ai-settings-note', 'Powered by Chrome Built-in AI');
     panel.insertBefore(status, messages);
 
     function submit() {
