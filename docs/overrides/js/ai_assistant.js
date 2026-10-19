@@ -215,6 +215,7 @@
     function submit() {
       var question = input.value.trim();
       if (!question || busy) { return; }
+      var aiPromise = getSession();
       input.value = '';
       say('user', question);
       var pending = say('assistant', '関連ページを検索しています…');
@@ -231,7 +232,7 @@
         var context = matches.map(function (doc) {
           return doc.title + '\n' + doc.excerpt + '\nURL: ' + doc.url;
         }).join('\n\n');
-        return getSession().then(function (ai) {
+        return aiPromise.then(function (ai) {
           status.textContent = '';
           pending.textContent = '回答を生成しています…';
           return ai.prompt(
