@@ -209,7 +209,7 @@
       });
     }
 
-    var status = element('p', 'ai-settings-note', 'Chrome Built-in AI対応環境専用。APIキー不要・外部AIへの送信なし。');
+    var status = element('p', 'ai-settings-note', 'Using Chrome Built-in AI');
     panel.insertBefore(status, messages);
 
     function submit() {
